@@ -1,0 +1,29 @@
+{
+ "chapters": [
+  {
+   "n": 1,
+   "title_en": "Descriptive Statistics: Center and Spread",
+   "title_ar": "الإحصاء الوصفي: مقاييس النزعة المركزية والتشتت",
+   "slides": 6,
+   "viz": [
+    {
+     "file": "viz/outlier.html",
+     "title": "القيمة الشاذة: المتوسط يتحرك والوسيط يثبت"
+    }
+   ],
+   "files": {
+    "summary": "DEMO-Ch01-Summary.pdf",
+    "slides": "DEMO-Ch01-Slides-Translation.pdf",
+    "definitions": "DEMO-Ch01-Definitions.pdf",
+    "questions": "DEMO-Ch01-Questions.pdf"
+   },
+   "has": [
+    "explanation",
+    "glossary",
+    "questions",
+    "summary",
+    "translation"
+   ]
+  }
+ ]
+}

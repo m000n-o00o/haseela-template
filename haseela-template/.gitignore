@@ -1,0 +1,8 @@
+desktop.ini
+Thumbs.db
+.DS_Store
+# build outputs and installed packages (recreated by the tools)
+.build/
+tools/node_modules/
+work/*/flags_ch*.txt
+/haseela-*.zip

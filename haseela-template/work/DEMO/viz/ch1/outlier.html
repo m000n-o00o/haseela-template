@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>القيمة الشاذة: المتوسط يتحرك والوسيط يثبت</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Sans+Arabic:wght@400;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<script>/* theme: ?theme=light|dark, else follow the device */(function(){var t=new URLSearchParams(location.search).get("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)})();</script>
+<style>/*STYLE*/
+svg{width:100%;height:auto;display:block}
+.axis{stroke:var(--mute);stroke-width:1}
+.pt{fill:var(--accent2)}
+.pt.last{fill:var(--accent)}
+.mk-mean{stroke:var(--accent);stroke-width:3}
+.mk-med{stroke:var(--accent2);stroke-width:3;stroke-dasharray:6 4}
+td.v{font-family:var(--font-mono)}
+input[type=range]{width:100%}
+</style>
+</head>
+<body>
+<main>
+<h1>القيمة الشاذة: المتوسط يتحرك والوسيط يثبت</h1>
+<p class="lead">البيانات من السلايد 3: 4، 7، 7، 9، والقيمة الأخيرة تتحكم فيها أنت. حرّكها وراقب المتوسط والوسيط والتشتت.</p>
+
+<div class="card">
+  <label for="last">القيمة الأخيرة: <b class="ltr" id="lastv"></b></label>
+  <input type="range" dir="ltr" id="last" min="9" max="60" step="1" value="13">
+</div>
+
+<div class="grid">
+  <div class="card">
+    <svg id="plot" viewBox="0 0 420 140" role="img" aria-label="خط أعداد عليه القيم والمتوسط والوسيط"></svg>
+    <p class="note">الخط المتصل هو المتوسط، والمتقطع هو الوسيط.</p>
+  </div>
+  <div class="card">
+    <table>
+      <thead><tr><th>المقياس</th><th>القيمة</th></tr></thead>
+      <tbody id="stats"></tbody>
+    </table>
+    <p class="note" id="msg" aria-live="polite" style="margin-top:10px"></p>
+  </div>
+</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const BASE=[4,7,7,9];
+const f=(v,d)=>Number.isInteger(v)?String(v):v.toFixed(d);
+function draw(){
+ const last=+$('last').value,x=[...BASE,last].sort((a,b)=>a-b),n=x.length;
+ const mean=x.reduce((s,v)=>s+v,0)/n,med=x[(n-1)/2];
+ const ss=x.reduce((s,v)=>s+(v-mean)**2,0);
+ $('lastv').textContent=last;
+ $('stats').innerHTML=[
+  ['المتوسط',f(mean,2)],['الوسيط',f(med,2)],['المدى',f(x[n-1]-x[0],2)],
+  ['تباين المجتمع (القسمة على n)',f(ss/n,2)],['تباين العينة (القسمة على ⁦n − 1⁩)',f(ss/(n-1),2)],['الانحراف المعياري للعينة',f(Math.sqrt(ss/(n-1)),2)]
+ ].map(r=>`<tr><td>${r[0]}</td><td class="v ltr" style="text-align:center">${r[1]}</td></tr>`).join('');
+ const W=420,L=20,R=20,sx=v=>L+(v-0)/(60-0)*(W-L-R),Y=80;
+ let g=`<line class="axis" x1="${L}" y1="${Y}" x2="${W-R}" y2="${Y}"/>`;
+ for(let v=0;v<=60;v+=10)g+=`<line class="axis" x1="${sx(v)}" y1="${Y-4}" x2="${sx(v)}" y2="${Y+4}"/><text x="${sx(v)}" y="${Y+22}" font-size="11" text-anchor="middle">${v}</text>`;
+ g+=`<line class="mk-mean" x1="${sx(mean)}" y1="20" x2="${sx(mean)}" y2="${Y}"/><line class="mk-med" x1="${sx(med)}" y1="20" x2="${sx(med)}" y2="${Y}"/>`;
+ const seen={};
+ [...BASE,last].forEach((v,i)=>{const k=seen[v]=(seen[v]||0)+1;g+=`<circle class="pt${i===4?' last':''}" cx="${sx(v)}" cy="${Y-8-(k-1)*12}" r="5"/>`});
+ $('plot').innerHTML=g;
+ $('msg').textContent=last>=30?`القيمة ${last} شاذة: المتوسط صار ${f(mean,2)} وابتعد عن معظم البيانات، والوسيط بقي ${f(med,2)}.`:'غيّر القيمة الأخيرة إلى رقم كبير، مثل 53 في السلايد 4، وقارن.';
+}
+$('last').oninput=draw;
+draw();
+</script>
+</body>
+</html>

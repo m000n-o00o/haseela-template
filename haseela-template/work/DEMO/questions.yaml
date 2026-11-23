@@ -1,0 +1,152 @@
+1:
+- id: demo-1-01
+  type: mcq
+  source: extra
+  slides:
+  - 3
+  q: What is the ==mean== of 4, 7, 7, 9, 13?
+  choices:
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  answer: 1
+  keyword: mean
+  explain_en: (4 + 7 + 7 + 9 + 13) / 5 = 40 / 5 = 8.
+  explain_ar: مجموع القيم 40 وعددها 5، فالمتوسط 8.
+- id: demo-1-02
+  type: mcq
+  source: extra
+  slides:
+  - 3
+  q: What is the ==median== of 4, 7, 7, 9, 13?
+  choices:
+  - '4'
+  - '7'
+  - '8'
+  - '9'
+  answer: 1
+  keyword: median
+  explain_en: The values are sorted; the 3rd of 5 values is 7.
+  explain_ar: البيانات مرتبة، والقيمة الثالثة من خمس قيم هي 7.
+- id: demo-1-03
+  type: mcq
+  source: extra
+  slides:
+  - 2
+  q: What is the median of ==4, 7, 9, 13==?
+  choices:
+  - '7'
+  - '8'
+  - '9'
+  - '8.25'
+  answer: 1
+  keyword: 4, 7, 9, 13
+  explain_en: 'With an even count, average the two middle values: (7 + 9) / 2 = 8.'
+  explain_ar: 'العدد زوجي، فنأخذ متوسط القيمتين اللتين في المنتصف: (7 + 9) / 2 = 8.'
+- id: demo-1-04
+  type: mcq
+  source: extra
+  slides:
+  - 2
+  q: Which measure is the value that appears ==most often==?
+  choices:
+  - Mean
+  - Median
+  - Mode
+  - Range
+  answer: 2
+  keyword: most often
+  explain_en: The mode is the most frequent value.
+  explain_ar: المنوال القيمة الأكثر تكرارًا.
+- id: demo-1-05
+  type: mcq
+  source: extra
+  slides:
+  - 4
+  q: If 13 is changed to ==53== in 4, 7, 7, 9, 13, what happens?
+  choices:
+  - Both the mean and the median rise
+  - The mean rises to 16 and the median stays 7
+  - The median rises and the mean stays 8
+  - Nothing changes
+  answer: 1
+  keyword: '53'
+  explain_en: The sum becomes 80, so the mean is 16; the middle value is still 7.
+  explain_ar: المجموع يصبح 80 فالمتوسط 16، والقيمة الوسطى تبقى 7.
+- id: demo-1-06
+  type: mcq
+  source: extra
+  slides:
+  - 4
+  q: Which measure of center is ==robust== to outliers?
+  choices:
+  - Mean
+  - Median
+  - Range
+  - Variance
+  answer: 1
+  keyword: robust
+  explain_en: The median depends on the order of values, not on how extreme they are.
+  explain_ar: الوسيط يعتمد على ترتيب القيم لا على حجم القيم الطرفية.
+- id: demo-1-07
+  type: mcq
+  source: extra
+  slides:
+  - 5
+  q: What is the ==range== of 4, 7, 7, 9, 13?
+  choices:
+  - '4'
+  - '8'
+  - '9'
+  - '13'
+  answer: 2
+  keyword: range
+  explain_en: Range = max − min = 13 − 4 = 9.
+  explain_ar: المدى = 13 − 4 = 9.
+- id: demo-1-08
+  type: mcq
+  source: extra
+  slides:
+  - 5
+  q: The squared deviations of 4, 7, 7, 9, 13 sum to 44. What is the ==sample variance==?
+  choices:
+  - '8.8'
+  - '9'
+  - '11'
+  - '44'
+  answer: 2
+  keyword: sample variance
+  explain_en: 'Sample variance divides by n − 1: 44 / 4 = 11.'
+  explain_ar: تباين العينة يُقسم على n − 1، أي 44 / 4 = 11.
+- id: demo-1-09
+  type: mcq
+  source: extra
+  slides:
+  - 5
+  q: Why is the ==standard deviation== easier to interpret than the variance?
+  choices:
+  - It is always smaller than the mean
+  - It is in the data's own units
+  - It ignores outliers
+  - It divides by n − 1
+  answer: 1
+  keyword: standard deviation
+  explain_en: The variance is in squared units; its square root returns to the data's units.
+  explain_ar: التباين بوحدة مربعة، والجذر يرجعنا لوحدة البيانات.
+- id: demo-1-10
+  type: mcq
+  source: extra
+  slides:
+  - 4
+  - 6
+  q: A sample of salaries contains one ==very high value==. Which summary describes a typical salary best?
+  choices:
+  - Mean
+  - Median
+  - Range
+  - Variance
+  answer: 1
+  keyword: very high value
+  explain_en: One outlier pulls the mean; the median resists it.
+  explain_ar: قيمة شاذة واحدة تسحب المتوسط، والوسيط يقاومها.

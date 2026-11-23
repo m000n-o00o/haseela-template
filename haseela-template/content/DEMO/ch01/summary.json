@@ -1,0 +1,163 @@
+{
+ "course": "DEMO",
+ "chapter": 1,
+ "title_en": "Chapter 1 — Descriptive Statistics: Center and Spread",
+ "title_ar": "الإحصاء الوصفي: مقاييس النزعة المركزية والتشتت",
+ "sections": [
+  {
+   "title": "Measures of Center",
+   "title_ar": "مقاييس النزعة المركزية",
+   "title_html": "Measures of Center",
+   "points": [
+    {
+     "kind": "def",
+     "star": false,
+     "en_md": "**Mean:** the ==sum of the values divided by their count==. It uses every value in the data.",
+     "ar_md": "المتوسط الحسابي مجموع القيم مقسومًا على عددها، ويدخل في حسابه كل القيم.",
+     "en_html": "<p><strong>Mean:</strong> the <span class=\"hs-key\">sum of the values divided by their count</span>. It uses every value in the data.</p>\n",
+     "ar_html": "<p>المتوسط الحسابي مجموع القيم مقسومًا على عددها، ويدخل في حسابه كل القيم.</p>\n"
+    },
+    {
+     "kind": "def",
+     "star": false,
+     "en_md": "**Median:** the ==middle value after sorting==; with an even count, the ==average of the two middle values==.",
+     "ar_md": "الوسيط القيمة التي في المنتصف بعد الترتيب، وإذا كان العدد زوجيًا نأخذ متوسط القيمتين اللتين في المنتصف.",
+     "en_html": "<p><strong>Median:</strong> the <span class=\"hs-key\">middle value after sorting</span>; with an even count, the <span class=\"hs-key\">average of the two middle values</span>.</p>\n",
+     "ar_html": "<p>الوسيط القيمة التي في المنتصف بعد الترتيب، وإذا كان العدد زوجيًا نأخذ متوسط القيمتين اللتين في المنتصف.</p>\n"
+    },
+    {
+     "kind": "def",
+     "star": false,
+     "en_md": "**Mode:** the value that ==appears most often==. A dataset can have ==no mode or more than one==.",
+     "ar_md": "المنوال القيمة الأكثر تكرارًا، وقد لا يوجد، وقد يوجد أكثر من منوال واحد.",
+     "en_html": "<p><strong>Mode:</strong> the value that <span class=\"hs-key\">appears most often</span>. A dataset can have <span class=\"hs-key\">no mode or more than one</span>.</p>\n",
+     "ar_html": "<p>المنوال القيمة الأكثر تكرارًا، وقد لا يوجد، وقد يوجد أكثر من منوال واحد.</p>\n"
+    },
+    {
+     "kind": "warn",
+     "star": false,
+     "en_md": "Sort the data ==before== taking the median. The middle of the unsorted list is not the median.",
+     "ar_md": "خطأ شائع: أخذ القيمة الوسطى قبل الترتيب.",
+     "en_html": "<p>Sort the data <span class=\"hs-key\">before</span> taking the median. The middle of the unsorted list is not the median.</p>\n",
+     "ar_html": "<p>خطأ شائع: أخذ القيمة الوسطى قبل الترتيب.</p>\n"
+    }
+   ]
+  },
+  {
+   "title": "Worked Example",
+   "title_ar": "مثال محلول",
+   "title_html": "Worked Example",
+   "points": [
+    {
+     "kind": "table",
+     "star": false,
+     "en_md": "| Measure | Data 4, 7, 7, 9, 13 |\n|---|---|\n| Mean <ar>المتوسط</ar> | 40 / 5 = ==8== <ar>8</ar> |\n| Median <ar>الوسيط</ar> | 3rd of 5 sorted values = ==7== <ar>7</ar> |\n| Mode <ar>المنوال</ar> | 7 appears twice = ==7== <ar>7</ar> |\n| Range <ar>المدى</ar> | 13 − 4 = ==9== <ar>9</ar> |\n",
+     "ar_md": "هذه الأرقام كلها محسوبة من البيانات نفسها في السلايد 3، والمدى من السلايد 5.",
+     "en_html": "<table>\n<thead>\n<tr>\n<th>Measure</th>\n<th>Data 4, 7, 7, 9, 13</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Mean <span class=\"ar-sub\" dir=\"rtl\">المتوسط</span></td>\n<td><span dir=\"ltr\" class=\"num\">40 / 5</span> = <span class=\"hs-key\">8</span> <span class=\"ar-sub\" dir=\"rtl\">8</span></td>\n</tr>\n<tr>\n<td>Median <span class=\"ar-sub\" dir=\"rtl\">الوسيط</span></td>\n<td>3rd of 5 sorted values = <span class=\"hs-key\">7</span> <span class=\"ar-sub\" dir=\"rtl\">7</span></td>\n</tr>\n<tr>\n<td>Mode <span class=\"ar-sub\" dir=\"rtl\">المنوال</span></td>\n<td>7 appears twice = <span class=\"hs-key\">7</span> <span class=\"ar-sub\" dir=\"rtl\">7</span></td>\n</tr>\n<tr>\n<td>Range <span class=\"ar-sub\" dir=\"rtl\">المدى</span></td>\n<td><span dir=\"ltr\" class=\"num\">13 − 4</span> = <span class=\"hs-key\">9</span> <span class=\"ar-sub\" dir=\"rtl\">9</span></td>\n</tr>\n</tbody></table>\n",
+     "ar_html": "<p>هذه الأرقام كلها محسوبة من البيانات نفسها في السلايد 3، والمدى من السلايد 5.</p>\n"
+    }
+   ]
+  },
+  {
+   "title": "Outliers",
+   "title_ar": "القيم الشاذة",
+   "title_html": "Outliers",
+   "points": [
+    {
+     "kind": "must",
+     "star": false,
+     "en_md": "Changing 13 to 53 moves the ==mean from 8 to 16==, while the ==median stays 7==. The median is ==robust== to outliers.",
+     "ar_md": "قيمة شاذة واحدة ضاعفت المتوسط، والوسيط لم يتغير. لذلك يُفضَّل الوسيط مع البيانات الملتوية.",
+     "en_html": "<p>Changing 13 to 53 moves the <span class=\"hs-key\">mean from 8 to 16</span>, while the <span class=\"hs-key\">median stays 7</span>. The median is <span class=\"hs-key\">robust</span> to outliers.</p>\n",
+     "ar_html": "<p>قيمة شاذة واحدة ضاعفت المتوسط، والوسيط لم يتغير. لذلك يُفضَّل الوسيط مع البيانات الملتوية.</p>\n"
+    },
+    {
+     "kind": "ex",
+     "star": false,
+     "en_md": "Salaries in a small company: one very high salary raises the mean, so the ==median== describes a typical employee better.",
+     "ar_md": "مثال إضافي: راتب مرتفع جدًا واحد يرفع المتوسط، والوسيط يصف الموظف المعتاد بدقة أكبر.",
+     "en_html": "<p>Salaries in a small company: one very high salary raises the mean, so the <span class=\"hs-key\">median</span> describes a typical employee better.</p>\n",
+     "ar_html": "<p>مثال إضافي: راتب مرتفع جدًا واحد يرفع المتوسط، والوسيط يصف الموظف المعتاد بدقة أكبر.</p>\n"
+    }
+   ]
+  },
+  {
+   "title": "Measures of Spread",
+   "title_ar": "مقاييس التشتت",
+   "title_html": "Measures of Spread",
+   "points": [
+    {
+     "kind": "def",
+     "star": false,
+     "en_md": "**Range** = ==max − min==. It depends only on the two extreme values.",
+     "ar_md": "المدى الفرق بين أكبر قيمة وأصغر قيمة، ويتأثر بالقيم الطرفية فقط.",
+     "en_html": "<p><strong>Range</strong> = <span class=\"hs-key\">max − min</span>. It depends only on the two extreme values.</p>\n",
+     "ar_html": "<p>المدى الفرق بين أكبر قيمة وأصغر قيمة، ويتأثر بالقيم الطرفية فقط.</p>\n"
+    },
+    {
+     "kind": "def",
+     "star": false,
+     "en_md": "**Variance:** the ==average squared distance from the mean==. Squared deviations here: 16, 1, 1, 1, 25 (sum ==44==).",
+     "ar_md": "التباين متوسط مربعات الانحرافات عن المتوسط، ومجموع المربعات هنا 44.",
+     "en_html": "<p><strong>Variance:</strong> the <span class=\"hs-key\">average squared distance from the mean</span>. Squared deviations here: 16, 1, 1, 1, 25 (sum <span class=\"hs-key\">44</span>).</p>\n",
+     "ar_html": "<p>التباين متوسط مربعات الانحرافات عن المتوسط، ومجموع المربعات هنا 44.</p>\n"
+    },
+    {
+     "kind": "must",
+     "star": false,
+     "en_md": "**Population** variance divides by ==n== (44 / 5 = 8.8); **sample** variance divides by ==n − 1== (44 / 4 = 11).",
+     "ar_md": "الفرق بين التباينين في المقام فقط: n للمجتمع، وn − 1 للعينة.",
+     "en_html": "<p><strong>Population</strong> variance divides by <span class=\"hs-key\">n</span> (44 / 5 = 8.8); <strong>sample</strong> variance divides by <span class=\"hs-key\">n − 1</span> (44 / 4 = 11).</p>\n",
+     "ar_html": "<p>الفرق بين التباينين في المقام فقط: n للمجتمع، وn − 1 للعينة.</p>\n"
+    },
+    {
+     "kind": "def",
+     "star": false,
+     "en_md": "**Standard deviation** = ==√variance==: 2.97 (population) and 3.32 (sample), in the ==data's own units==.",
+     "ar_md": "الانحراف المعياري جذر التباين، ووحدته وحدة البيانات نفسها، فيسهل تفسيره أكثر من التباين.",
+     "en_html": "<p><strong>Standard deviation</strong> = <span class=\"hs-key\">√variance</span>: 2.97 (population) and 3.32 (sample), in the <span class=\"hs-key\">data&#39;s own units</span>.</p>\n",
+     "ar_html": "<p>الانحراف المعياري جذر التباين، ووحدته وحدة البيانات نفسها، فيسهل تفسيره أكثر من التباين.</p>\n"
+    },
+    {
+     "kind": "warn",
+     "star": false,
+     "en_md": "Variance is in ==squared units==. If the data is in cm, the variance is in cm².",
+     "ar_md": "خطأ شائع: كتابة وحدة التباين بوحدة البيانات نفسها.",
+     "en_html": "<p>Variance is in <span class=\"hs-key\">squared units</span>. If the data is in cm, the variance is in cm².</p>\n",
+     "ar_html": "<p>خطأ شائع: كتابة وحدة التباين بوحدة البيانات نفسها.</p>\n"
+    }
+   ]
+  },
+  {
+   "title": "Key Points",
+   "title_ar": "النقاط الرئيسية",
+   "title_html": "Key Points",
+   "points": [
+    {
+     "kind": "must",
+     "star": false,
+     "en_md": "Center: ==mean, median, mode==. Spread: ==range, variance, standard deviation==.",
+     "ar_md": "ثلاثة مقاييس للمركز، وثلاثة للتشتت.",
+     "en_html": "<p>Center: <span class=\"hs-key\">mean, median, mode</span>. Spread: <span class=\"hs-key\">range, variance, standard deviation</span>.</p>\n",
+     "ar_html": "<p>ثلاثة مقاييس للمركز، وثلاثة للتشتت.</p>\n"
+    },
+    {
+     "kind": "must",
+     "star": false,
+     "en_md": "One outlier can pull the ==mean== far away; the ==median== resists it.",
+     "ar_md": "المتوسط حساس للقيم الشاذة، والوسيط متين أمامها.",
+     "en_html": "<p>One outlier can pull the <span class=\"hs-key\">mean</span> far away; the <span class=\"hs-key\">median</span> resists it.</p>\n",
+     "ar_html": "<p>المتوسط حساس للقيم الشاذة، والوسيط متين أمامها.</p>\n"
+    },
+    {
+     "kind": null,
+     "star": true,
+     "en_md": "Always ==look at the data==, not only at one summary number.",
+     "ar_md": "الرقم الواحد يلخص البيانات لكنه قد يخفي شكلها.",
+     "en_html": "<p>Always <span class=\"hs-key\">look at the data</span>, not only at one summary number.</p>\n",
+     "ar_html": "<p>الرقم الواحد يلخص البيانات لكنه قد يخفي شكلها.</p>\n"
+    }
+   ]
+  }
+ ]
+}

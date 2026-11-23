@@ -1,0 +1,104 @@
+{
+ "course": "DEMO",
+ "chapter": 1,
+ "keywords": [
+  "mean",
+  "median",
+  "outlier",
+  "variance"
+ ],
+ "terms": [
+  {
+   "term": "Mean",
+   "ar": "المتوسط الحسابي",
+   "def_en": "The sum of the values divided by how many there are.",
+   "def_ar": "مجموع القيم مقسومًا على عددها.",
+   "keywords": [
+    "sum",
+    "divided by count"
+   ],
+   "def_en_html": "The sum of the values divided by how many there are.",
+   "def_ar_html": "مجموع القيم مقسومًا على عددها."
+  },
+  {
+   "term": "Median",
+   "ar": "الوسيط",
+   "def_en": "The middle value after sorting; with an even count, the average of the two middle values.",
+   "def_ar": "القيمة التي في المنتصف بعد الترتيب، أو متوسط القيمتين اللتين في المنتصف إذا كان العدد زوجيًا.",
+   "keywords": [
+    "middle value",
+    "after sorting"
+   ],
+   "def_en_html": "The middle value after sorting; with an even count, the average of the two middle values.",
+   "def_ar_html": "القيمة التي في المنتصف بعد الترتيب، أو متوسط القيمتين اللتين في المنتصف إذا كان العدد زوجيًا."
+  },
+  {
+   "term": "Mode",
+   "ar": "المنوال",
+   "def_en": "The value that appears most often; a dataset can have no mode or more than one.",
+   "def_ar": "القيمة الأكثر تكرارًا، وقد لا يوجد منوال أو يوجد أكثر من واحد.",
+   "keywords": [
+    "most often"
+   ],
+   "def_en_html": "The value that appears most often; a dataset can have no mode or more than one.",
+   "def_ar_html": "القيمة الأكثر تكرارًا، وقد لا يوجد منوال أو يوجد أكثر من واحد."
+  },
+  {
+   "term": "Outlier",
+   "ar": "القيمة الشاذة",
+   "def_en": "A value far from the rest of the data; it can pull the mean strongly.",
+   "def_ar": "قيمة بعيدة عن بقية البيانات، وتسحب المتوسط بقوة.",
+   "keywords": [
+    "far from the rest"
+   ],
+   "def_en_html": "A value far from the rest of the data; it can pull the mean strongly.",
+   "def_ar_html": "قيمة بعيدة عن بقية البيانات، وتسحب المتوسط بقوة."
+  },
+  {
+   "term": "Robust",
+   "ar": "متين",
+   "def_en": "A statistic is robust when outliers barely change it; the median is robust, the mean is not.",
+   "def_ar": "المقياس متين إذا لم تغيّره القيم الشاذة كثيرًا، فالوسيط متين والمتوسط ليس كذلك.",
+   "keywords": [
+    "outliers barely change it"
+   ],
+   "def_en_html": "A statistic is robust when outliers barely change it; the median is robust, the mean is not.",
+   "def_ar_html": "المقياس متين إذا لم تغيّره القيم الشاذة كثيرًا، فالوسيط متين والمتوسط ليس كذلك."
+  },
+  {
+   "term": "Range",
+   "ar": "المدى",
+   "def_en": "The largest value minus the smallest value.",
+   "def_ar": "أكبر قيمة ناقص أصغر قيمة.",
+   "keywords": [
+    "max − min"
+   ],
+   "def_en_html": "The largest value minus the smallest value.",
+   "def_ar_html": "أكبر قيمة ناقص أصغر قيمة."
+  },
+  {
+   "term": "Variance",
+   "ar": "التباين",
+   "def_en": "The average squared distance from the mean; divide by n for a population and by n − 1 for a sample.",
+   "def_ar": "متوسط مربعات البعد عن المتوسط، ويُقسم على n للمجتمع وعلى n − 1 للعينة.",
+   "keywords": [
+    "squared distance",
+    "n − 1"
+   ],
+   "def_en_html": "The average squared distance from the mean; divide by n for a population and by n − 1 for a sample.",
+   "def_ar_html": "متوسط مربعات البعد عن المتوسط، ويُقسم على n للمجتمع وعلى n − 1 للعينة."
+  },
+  {
+   "term": "Standard deviation",
+   "ar": "الانحراف المعياري",
+   "def_en": "The square root of the variance, in the data's own units.",
+   "def_ar": "الجذر التربيعي للتباين، بوحدة البيانات نفسها.",
+   "keywords": [
+    "square root",
+    "own units"
+   ],
+   "def_en_html": "The square root of the variance, in the data&#39;s own units.",
+   "def_ar_html": "الجذر التربيعي للتباين، بوحدة البيانات نفسها."
+  }
+ ]
+}

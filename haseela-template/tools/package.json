@@ -1,0 +1,14 @@
+{
+  "name": "haseela-tools",
+  "private": true,
+  "description": "Build tools for the Haseela study site. Run from the repo root, e.g. COURSE=DM node tools/build.js 1,2,3",
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.2.0",
+    "@fontsource/ibm-plex-sans": "^5.2.0",
+    "@fontsource/ibm-plex-sans-arabic": "^5.2.0",
+    "js-yaml": "^5.5.0",
+    "katex": "^0.19.1",
+    "marked": "^18.2.0",
+    "playwright": "^1.48.0"
+  }
+}

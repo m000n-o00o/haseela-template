@@ -1,0 +1,116 @@
+{
+ "course": "DEMO",
+ "chapter": 1,
+ "title_en": "Chapter 1 — Descriptive Statistics: Center and Spread",
+ "title_ar": "الإحصاء الوصفي: مقاييس النزعة المركزية والتشتت",
+ "sections": [
+  {
+   "title": "Why Summarize Data?",
+   "title_ar": "لماذا نلخص البيانات؟",
+   "title_html": "Why Summarize Data?",
+   "points": [
+    {
+     "kind": "def",
+     "star": false,
+     "en_md": "Descriptive statistics describe a dataset with a ==few numbers==: where the values are centered, and how far they spread.",
+     "ar_md": "لو عندك درجات 200 طالب، فقراءة الأرقام واحدًا واحدًا لا تعطيك صورة واضحة. أما رقم للمركز ورقم للتشتت فيعطيانك الصورة بسرعة.",
+     "en_html": "<p>Descriptive statistics describe a dataset with a <span class=\"hs-key\">few numbers</span>: where the values are centered, and how far they spread.</p>\n",
+     "ar_html": "<p>لو عندك درجات 200 طالب، فقراءة الأرقام واحدًا واحدًا لا تعطيك صورة واضحة. أما رقم للمركز ورقم للتشتت فيعطيانك الصورة بسرعة.</p>\n"
+    }
+   ]
+  },
+  {
+   "title": "Measures of Center",
+   "title_ar": "مقاييس النزعة المركزية",
+   "title_html": "Measures of Center",
+   "points": [
+    {
+     "kind": "must",
+     "star": false,
+     "en_md": "**Mean:** add all values and divide by their count. For 4, 7, 7, 9, 13: (4 + 7 + 7 + 9 + 13) / 5 = 40 / 5 = ==8==.",
+     "ar_md": "المتوسط يستخدم كل القيم، وهذه ميزته وعيبه في الوقت نفسه: كل قيمة تؤثر فيه، حتى القيمة الشاذة.",
+     "en_html": "<p><strong>Mean:</strong> add all values and divide by their count. For 4, 7, 7, 9, 13: (4 + 7 + 7 + 9 + 13) / 5 = 40 / 5 = <span class=\"hs-key\">8</span>.</p>\n",
+     "ar_html": "<p>المتوسط يستخدم كل القيم، وهذه ميزته وعيبه في الوقت نفسه: كل قيمة تؤثر فيه، حتى القيمة الشاذة.</p>\n"
+    },
+    {
+     "kind": "must",
+     "star": false,
+     "en_md": "**Median:** sort first, then take the middle. The values are already sorted, and the 3rd of 5 is ==7==. For an even count, such as 4, 7, 9, 13, the median is (7 + 9) / 2 = 8.",
+     "ar_md": "الوسيط لا يهتم بحجم القيم الطرفية، بل بترتيبها فقط. ولهذا لا يتغير إذا كبرت أكبر قيمة.",
+     "en_html": "<p><strong>Median:</strong> sort first, then take the middle. The values are already sorted, and the 3rd of 5 is <span class=\"hs-key\">7</span>. For an even count, such as 4, 7, 9, 13, the median is (7 + 9) / 2 = 8.</p>\n",
+     "ar_html": "<p>الوسيط لا يهتم بحجم القيم الطرفية، بل بترتيبها فقط. ولهذا لا يتغير إذا كبرت أكبر قيمة.</p>\n"
+    },
+    {
+     "kind": "def",
+     "star": false,
+     "en_md": "**Mode:** the most frequent value. Here 7 appears twice, so the mode is ==7==.",
+     "ar_md": "المنوال مفيد أيضًا مع البيانات غير الرقمية، مثل اللون الأكثر اختيارًا في استبيان.",
+     "en_html": "<p><strong>Mode:</strong> the most frequent value. Here 7 appears twice, so the mode is <span class=\"hs-key\">7</span>.</p>\n",
+     "ar_html": "<p>المنوال مفيد أيضًا مع البيانات غير الرقمية، مثل اللون الأكثر اختيارًا في استبيان.</p>\n"
+    }
+   ]
+  },
+  {
+   "title": "Outliers",
+   "title_ar": "القيم الشاذة",
+   "title_html": "Outliers",
+   "points": [
+    {
+     "kind": "must",
+     "star": false,
+     "en_md": "Replace 13 with 53. The sum becomes 80, so the mean becomes 80 / 5 = ==16==. The sorted middle value is still ==7==.",
+     "ar_md": "جرّب هذا بنفسك في العرض التفاعلي: حرّك القيمة الأخيرة وراقب المتوسط والوسيط.",
+     "en_html": "<p>Replace 13 with 53. The sum becomes 80, so the mean becomes 80 / 5 = <span class=\"hs-key\">16</span>. The sorted middle value is still <span class=\"hs-key\">7</span>.</p>\n",
+     "ar_html": "<p>جرّب هذا بنفسك في العرض التفاعلي: حرّك القيمة الأخيرة وراقب المتوسط والوسيط.</p>\n"
+    },
+    {
+     "kind": "ex",
+     "star": false,
+     "en_md": "House prices, salaries and waiting times are often ==skewed==, so reports usually give the median.",
+     "ar_md": "مثال إضافي: لهذا تذكر تقارير أسعار المنازل غالبًا «الوسيط» بدل المتوسط.",
+     "en_html": "<p>House prices, salaries and waiting times are often <span class=\"hs-key\">skewed</span>, so reports usually give the median.</p>\n",
+     "ar_html": "<p>مثال إضافي: لهذا تذكر تقارير أسعار المنازل غالبًا «الوسيط» بدل المتوسط.</p>\n"
+    }
+   ]
+  },
+  {
+   "title": "Measures of Spread",
+   "title_ar": "مقاييس التشتت",
+   "title_html": "Measures of Spread",
+   "points": [
+    {
+     "kind": "def",
+     "star": false,
+     "en_md": "**Range:** 13 − 4 = ==9==. Quick to compute, but one extreme value changes it completely.",
+     "ar_md": "مع القيمة 53 يصبح المدى 49، أي أن قيمة واحدة غيّرته بالكامل.",
+     "en_html": "<p><strong>Range:</strong> 13 − 4 = <span class=\"hs-key\">9</span>. Quick to compute, but one extreme value changes it completely.</p>\n",
+     "ar_html": "<p>مع القيمة 53 يصبح المدى 49، أي أن قيمة واحدة غيّرته بالكامل.</p>\n"
+    },
+    {
+     "kind": "must",
+     "star": false,
+     "en_md": "**Variance step by step:** deviations from the mean 8 are −4, −1, −1, 1, 5. Their squares are 16, 1, 1, 1, 25, and the sum is ==44==. Population: 44 / 5 = ==8.8==. Sample: 44 / 4 = ==11==.",
+     "ar_md": "نربّع الانحرافات حتى لا تلغي الموجبة السالبة. فمجموع الانحرافات بدون تربيع يساوي صفرًا دائمًا.",
+     "en_html": "<p><strong>Variance step by step:</strong> deviations from the mean 8 are −4, −1, −1, 1, 5. Their squares are 16, 1, 1, 1, 25, and the sum is <span class=\"hs-key\">44</span>. Population: 44 / 5 = <span class=\"hs-key\">8.8</span>. Sample: 44 / 4 = <span class=\"hs-key\">11</span>.</p>\n",
+     "ar_html": "<p>نربّع الانحرافات حتى لا تلغي الموجبة السالبة. فمجموع الانحرافات بدون تربيع يساوي صفرًا دائمًا.</p>\n"
+    },
+    {
+     "kind": "def",
+     "star": false,
+     "en_md": "**Standard deviation:** √8.8 ≈ ==2.97== (population) and √11 ≈ ==3.32== (sample).",
+     "ar_md": "الانحراف المعياري يرجع بنا إلى وحدة البيانات الأصلية، فنقول: القيم تبعد عن المتوسط نحو 3 وحدات في المعتاد.",
+     "en_html": "<p><strong>Standard deviation:</strong> √8.8 ≈ <span class=\"hs-key\">2.97</span> (population) and √11 ≈ <span class=\"hs-key\">3.32</span> (sample).</p>\n",
+     "ar_html": "<p>الانحراف المعياري يرجع بنا إلى وحدة البيانات الأصلية، فنقول: القيم تبعد عن المتوسط نحو 3 وحدات في المعتاد.</p>\n"
+    },
+    {
+     "kind": "warn",
+     "star": false,
+     "en_md": "Use ==n − 1== when the data is a sample from a larger population.",
+     "ar_md": "القسمة على n − 1 تعوّض أن العينة تميل إلى إظهار تشتت أقل من تشتت المجتمع الحقيقي.",
+     "en_html": "<p>Use <span class=\"hs-key\">n − 1</span> when the data is a sample from a larger population.</p>\n",
+     "ar_html": "<p>القسمة على n − 1 تعوّض أن العينة تميل إلى إظهار تشتت أقل من تشتت المجتمع الحقيقي.</p>\n"
+    }
+   ]
+  }
+ ]
+}
