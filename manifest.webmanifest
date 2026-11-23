@@ -1,7 +1,7 @@
 {
   "name": "حصيلة",
   "short_name": "حصيلة",
-  "description": "مذاكرة الفاينل للدفعة",
+  "description": "موقع مذاكرة تفاعلي للدفعة",
   "lang": "ar",
   "dir": "rtl",
   "start_url": "./index.html",

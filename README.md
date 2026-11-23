@@ -1,6 +1,6 @@
 # حصيلة
 
-حصيلة قالبٌ لموقع مذاكرة تفاعلي يستعد به الطلاب للاختبارات النهائية، وتبنيه الدفعة لنفسها. ويضم كل فصل في الموقع:
+حصيلة قالبٌ لموقع مذاكرة تفاعلي تبنيه الدفعة لنفسها، ويُستخدم طوال الفصل الدراسي: للمذاكرة أولًا بأول، وللاستعداد للاختبارات القصيرة والنصفية والنهائية. ويضم كل فصل في الموقع:
 - ترجمة كل شريحة بجانب صورتها الأصلية.
 - ملخصًا في صفحتين.
 - شرحًا مفصلًا.
@@ -81,7 +81,7 @@ python3 tools/site_content.py DEMO
 
 ## English
 
-Haseela is a template for an interactive, bilingual (English/Arabic) final-exam study site that a student batch builds for itself. Each chapter page shows slide-by-slide translation, a 2-page summary, a detailed explanation, an interactive visual, a glossary and MCQs with spaced repetition. It's a static site for GitHub Pages, with Node/Python tools to prepare, build and check chapters, and a Claude skill (`skills/haseela-chapter.zip`) that runs the workflow. A demo course (`DEMO`) with original sample content is included.
+Haseela is a template for an interactive, bilingual (English/Arabic) study site that a student batch builds for itself, for use all semester: keeping up with lectures and preparing for quizzes, midterms and finals. Each chapter page shows slide-by-slide translation, a 2-page summary, a detailed explanation, an interactive visual, a glossary and MCQs with spaced repetition. It's a static site for GitHub Pages, with Node/Python tools to prepare, build and check chapters, and a Claude skill (`skills/haseela-chapter.zip`) that runs the workflow. A demo course (`DEMO`) with original sample content is included.
 
 Licensed under [PolyForm Noncommercial 1.0.0](LICENSE): free for any noncommercial use. Selling it, or using it commercially, isn't allowed. Keep your course slides and exam material in a private repo unless their authors allow publishing them.
 
