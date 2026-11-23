@@ -4,6 +4,11 @@ All notable changes to the Haseela template. Versions follow [Semantic Versionin
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-23
+
+- Docs: describe Haseela as an all-semester study site, not only for finals.
+- Docs: README, contributing guide and rules rewritten in clear Modern Standard Arabic.
+
 ## [1.0.0] - 2026-11-23
 
 First public release.
